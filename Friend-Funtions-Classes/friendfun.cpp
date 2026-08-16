@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Exam;
+class Exam;    // Forward declaration of Class //
 class student 
 {
     int rno;

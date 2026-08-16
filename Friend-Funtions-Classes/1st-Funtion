@@ -1,1 +1,27 @@
+#include <iostream>
+using namespace std;
 
+class employee
+{
+private:
+    int empid;
+    float salary;
+
+public:
+    employee(int e, float s) {
+        empid = e;
+        salary = s;
+    }
+    friend void show(employee);
+};
+
+void show(employee e) {
+    cout << "empid = " << e.empid << endl;
+    cout << "Salary = " << e.salary;
+}
+int main() {
+    employee e1(101, 1000);
+    show(e1);
+
+    return 0;
+}
